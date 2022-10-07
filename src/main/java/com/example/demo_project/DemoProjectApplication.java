@@ -8,6 +8,11 @@ public class DemoProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoProjectApplication.class, args);
+//		PersonServiceImpl personservice = new PersonServiceImpl();
+//		Person person = personservice.getPersonInfo("nnn");
+//		personservice.printPersonAttributes(person);
+//		BirdServiceImpl birdservice = new BirdServiceImpl();
+//		birdservice.fly("Balangehcimia", 99);
+		
 	}
-
 }
