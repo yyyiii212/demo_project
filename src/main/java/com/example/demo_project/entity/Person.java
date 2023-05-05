@@ -1,30 +1,31 @@
 package com.example.demo_project.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "person")
 public class Person {
-	private String state;
-	private String city;
-	private String name;
+	@Id
+	@Column(name = "id")
 	private String id;
+	
+	@Column(name = "name")
+	private String name;
+	
+	@Column(name = "age")
 	private int age;
 
 	public Person() {
 
 	}
 
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
+	public Person(String name, String id, int age) {
+		this.name = name;
+		this.age = age;
+		this.id = id;
 	}
 
 	public String getName() {
